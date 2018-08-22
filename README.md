@@ -1,4 +1,4 @@
-# winston-raven-logger
+# sentry-winston-logger
 
 Logger with sentry support
 
