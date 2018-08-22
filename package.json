@@ -1,9 +1,10 @@
 {
   "name": "winston-raven-logger",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Winston based sentry logger",
   "main": "build/index.js",
   "scripts": {
+    "start": "babel-node src/index.js",
     "test": "babel-tape-runner src/__test__/*.js | tap-spec",
     "build": "babel src --ignore **/__test__/**.js -d build",
     "coverage": "cross-env NODE_ENV=test nyc npm test"
@@ -12,7 +13,7 @@
   "license": "MIT",
   "peerDependencies": {
     "raven": "^2.6.3",
-    "winston": "2.3.1"
+    "winston": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -36,7 +37,8 @@
     "tap-xunit": "1.7.0",
     "tape": "4.6.3",
     "tape-istanbul": "^1.2.0",
-    "winston": "2.3.1"
+    "winston": "^3.0.0",
+    "winston-transport": "^4.2.0"
   },
   "babel": {
     "presets": [
