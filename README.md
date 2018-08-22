@@ -1,5 +1,7 @@
 # winston-raven-logger
 
+Logger with sentry support
+
 ### Dependencies
 
  - "raven": "^2.6.3"
