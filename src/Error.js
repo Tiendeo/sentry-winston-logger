@@ -5,11 +5,9 @@ class DetailError extends Error {
     const message = args.reduce((acc, i) => `${acc}${isError(i) ? i.message : i}`, '');
     super(message);
     if (e) {
-      this._stack = e.stack;
-
       Object.defineProperty(this, 'stack', {
         get: function() {
-          return this._stack;
+          return e.stack;
         }
       });
     } else {
