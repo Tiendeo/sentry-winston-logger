@@ -47,3 +47,6 @@ xunit.xml
 
 # data
 data
+
+#build
+build/
